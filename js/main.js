@@ -18,30 +18,30 @@ function insertElements(dataJson) {
 
     const row = document.createElement('tr')
 
-    let coll_1 = document.createElement('th')
-    coll_1.innerHTML = data.id;
+    let coll_id = document.createElement('th')
+    coll_id.innerHTML = data.id;
 
-    let coll_2 = document.createElement('th')
-    coll_2.innerHTML = data.name;
+    let coll_name = document.createElement('th')
+    coll_name.innerHTML = data.name;
 
-    let coll_3 = document.createElement('th')
-    coll_3.innerHTML = data.username;
+    let coll_username = document.createElement('th')
+    coll_username.innerHTML = data.username;
 
-    let coll_4 = document.createElement('th')
-    coll_4.innerHTML = data.email;
+    let coll_email = document.createElement('th')
+    coll_email.innerHTML = data.email;
 
-    let coll_5 = document.createElement('th')
-    coll_5.innerHTML = data.address.street;
+    let coll_adderss = document.createElement('th')
+    coll_adderss.innerHTML = data.address.street;
 
-    let coll_6 = document.createElement('th')
-    coll_6.innerHTML = data.company.name;
+    let coll_company = document.createElement('th')
+    coll_company.innerHTML = data.company.name;
 
-    row.appendChild(coll_1);
-    row.appendChild(coll_2);
-    row.appendChild(coll_3);
-    row.appendChild(coll_4);
-    row.appendChild(coll_5);
-    row.appendChild(coll_6);
+    row.appendChild(coll_id);
+    row.appendChild(coll_name);
+    row.appendChild(coll_username);
+    row.appendChild(coll_email);
+    row.appendChild(coll_adderss);
+    row.appendChild(coll_company);
 
     tableUser.appendChild(row);
 

@@ -14,7 +14,7 @@
     <main class="container">
         <h1>Lista de usuário</h1>
 
-        <table class="table">
+        <table class="table table-striped" >
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -31,7 +31,18 @@
             </tbody>
         </table>
         </table>
-
+        
+        <form class="form-inline">
+            <label class="sr-only" for="inlineFormInputName2"></label>
+            <input type="text" class="form-control mb-2 mr-sm-2"  placeholder="id do Usuário" style ="width: 200px; display: inline-block;">
+          
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+            <button type="reset" class="btn btn-primary mb-2">Limpar</button>
+          </form>
+          <section>
+            <h2>Form Data</h2>
+            <p>{}</p>
+          </section>
     </main>
 
 
