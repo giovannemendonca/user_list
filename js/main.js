@@ -13,36 +13,34 @@ fetch(url)
 
 function insertElements(dataJson) {
 
-    const tableUser = document.querySelector('.tableUser');
     let data = dataJson;
 
+    const tableUser = document.querySelector('.tableUser');
     const row = document.createElement('tr')
 
     let coll_id = document.createElement('th')
     coll_id.innerHTML = data.id;
+    row.appendChild(coll_id);
 
     let coll_name = document.createElement('th')
     coll_name.innerHTML = data.name;
+    row.appendChild(coll_name);
 
     let coll_username = document.createElement('th')
     coll_username.innerHTML = data.username;
+    row.appendChild(coll_username);
 
     let coll_email = document.createElement('th')
     coll_email.innerHTML = data.email;
+    row.appendChild(coll_email);
 
     let coll_adderss = document.createElement('th')
     coll_adderss.innerHTML = data.address.street;
+    row.appendChild(coll_adderss);
 
     let coll_company = document.createElement('th')
     coll_company.innerHTML = data.company.name;
-
-    row.appendChild(coll_id);
-    row.appendChild(coll_name);
-    row.appendChild(coll_username);
-    row.appendChild(coll_email);
-    row.appendChild(coll_adderss);
     row.appendChild(coll_company);
 
     tableUser.appendChild(row);
-
 }
