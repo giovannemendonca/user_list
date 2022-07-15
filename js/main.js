@@ -44,3 +44,25 @@ function insertElements(dataJson) {
 
     tableUser.appendChild(row);
 }
+
+var fetchId = document.querySelector('#id-user');
+
+fetchId.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    var id = document.querySelector('#inputSearch').value;
+    let result = document.querySelector('#result');
+
+
+    const response = fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        .then(res => res.json())
+        .then(data => {
+            result.innerHTML =
+            `Nome: ${data.name}<br>
+            Nome Usuário: ${data.username}<br>
+            Email: ${data.email}<br>
+            Endereço: ${data.address.street}<br>
+            Empresa: ${data.company.name}`;
+        })
+        .catch((erro) => alert(`Erro ao localizar ID \nPor Favor tente Novamente!!! \n${erro}`))
+})
