@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Lista de Usuarios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
@@ -34,17 +34,17 @@
 
         <form class="form-inline">
             <label class="sr-only" for="inlineFormInputName2"></label>
-            <input name="id" type="text" class="form-control mb-2 mr-sm-2" id="inputSearch" placeholder="id do Usuário"
+            <input name="id" type="number" class="form-control mb-2 mr-sm-2" id="inputSearch" placeholder="id do Usuário"
                 style="width: 200px; display: inline-block;">
 
-            <input type="submit" class="btn mb-2 btn-outline-primary" name="id" id="inputSearch" value="Buscar">
+            <input type="submit" class="btn mb-2 btn-outline-primary" name="id" id="id-user" value="Buscar">
             <input type="reset" class="btn mb-2 btn-outline-primary" value="Limpar">
 
         </form>
         
         <section>
             <h2>Form Data</h2>
-            <p>{}</p>
+            <p id="result"></p>
         </section>
     </main>
 
